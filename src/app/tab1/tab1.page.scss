@@ -1,0 +1,110 @@
+ion-header {
+  --background: linear-gradient(to bottom, #00e51f, #005d2a);
+  color: #ffffff;
+}
+
+.custom-header {
+  --background: linear-gradient(to bottom, #00e51f, #005d2a);
+  --ion-color-base: #fff;
+}
+
+/* Warna ikon pada keadaan normal (emas) */
+.custom-logout .icon {
+  color: #ffffff; /* Warna emas (ganti dengan kode warna emas yang Anda inginkan) */
+}
+
+
+/* Warna ikon saat tombol ditekan (merah) */
+.custom-logout:active .icon {
+  color: #ff0000; /* Warna merah (ganti dengan kode warna merah yang Anda inginkan) */
+}
+
+
+ion-title.custom-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+ion-fab-button::part(native) {
+  background-color: #b7f399;
+  border-radius: 15px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  color: rgb(59, 45, 45);
+}
+
+ion-fab-button::part(native):hover::after {
+  background-color: #a3e681;
+}
+
+ion-fab-button::part(native):active::after {
+  background-color: #87d361;
+}
+
+
+.name {
+  margin-top: 5%;
+  color: white;
+  font-size: 150%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+  margin-top: 2%;
+  text-align: center;
+  font-family: sans-serif;
+
+ 
+}
+
+
+
+
+.img-border {
+  border: 10px solid #fff;
+  border-radius: 50%;
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+
+.name-ion-card{
+  text-align: center;
+}
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.span {
+  font-size: 1rem;
+  color: #555;
+  
+}
+
+
+.img-border {
+  border: 5px solid #fff; /* Menambahkan border putih */
+  border-radius: 50%; /* Menerapkan border radius untuk membuat border bundar */
+  width: 200px; /* Sesuaikan dengan lebar yang Anda inginkan */
+  height: 200px; /* Sesuaikan dengan tinggi yang Anda inginkan */
+  margin: 0 auto;
+}
+
+
+.heading img {
+  top: 5%;
+  border: 6px solid #415a44;
+  border-radius: 150px;
+  
+
+  box-shadow: 6px -4px 20px -3px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}

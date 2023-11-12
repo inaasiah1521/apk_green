@@ -1,0 +1,58 @@
+/* Gaya tab-button */
+img{
+  border-radius: 60px;
+  background-color: white;
+  padding: 5px;
+}
+ion-tab-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  /* Gaya khusus untuk tab logo aplikasi */
+  &.qris-tab {
+    position: relative;
+    width: 80px; /* Sesuaikan lebar ikon sesuai kebutuhan */
+    height: 80px; /* Sesuaikan tinggi ikon sesuai kebutuhan */
+    border-radius: 50%;
+    background-color: transparent; /* Hapus warna latar belakang */
+    position: relative;
+    z-index: 2; /* Pastikan ikon QRIS berada di atas tab lain */
+    transition: transform 0.3s ease-in-out; /* Animasi transformasi */
+  }
+
+  /* Gaya ikon QRIS */
+  .qris-icon {
+    width: 85%; /* Sesuaikan lebar sesuai kebutuhan */
+    height: 85%; /* Sesuaikan tinggi sesuai kebutuhan */
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  /* Gaya awal ikon dan label (putih) */
+  ion-icon,
+  ion-label {
+    color: white;
+  }
+}
+
+/* Gaya latar belakang tab */
+ion-tab-bar {
+  --background: linear-gradient(to bottom, #4bf061, #85d7aa);
+}
+
+/* Gaya warna ikon dan label saat tab aktif (diklik) */
+ion-tab-button.tab-selected {
+  ion-icon,
+  ion-label {
+    color: rgb(24, 103, 0);
+  }
+}

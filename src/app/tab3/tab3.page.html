@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true" *ngIf="infoData">
+  <ol style="--length: 5" role="list">
+    <li style="--i: 1" *ngFor="let item of infoData let i = index">
+      <!-- Mengubah warna latar belakang ion-card menjadi hijau -->
+      <ion-card style="background-color: rgb(207, 230, 207);">
+        <ion-card-header>
+          <h3>{{ item.judul_info }}</h3>
+          <p>{{ item.informasi }}</p>
+          <p>Tanggal Info: {{ item.tgl_info }}</p>
+        </ion-card-header>
+      </ion-card>
+
+      <!-- Tombol "Floating" -->
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button routerLink="/tahuan">
+        <ion-icon name="today-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button routerLink="/h-lainnya">
+        <ion-icon name="reader-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button routerLink="/iuran">
+        <ion-icon name="cash-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button routerLink="/d-iuran">
+        <ion-icon name="wallet-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>

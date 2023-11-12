@@ -1,0 +1,95 @@
+/* Style the ion-card element */
+ion-card {
+  margin: 10px; /* Add margin for spacing */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow for a card-like effect */
+  border-radius: 8px; /* Add border radius for rounded corners */
+}
+
+/* Style the table within the ion-card */
+ion-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style the table headers */
+ion-card th {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style the table rows */
+ion-card tr {
+  border: 1px solid #ccc;
+}
+ion-content {
+  --background: url("../../assets/WhatsApp\ Image\ 2023-11-12\ at\ 07.59.14.jpeg");
+  position: center;
+  margin-left: 500px;
+}
+
+
+ion-fab {
+  top: 82%;
+  position: fixed;
+  justify-content: left;
+}
+ion-fab-button::part(native) {
+  background-color: #b7f399;
+  border-radius: 15px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  color: black;
+}
+
+ion-fab-button::part(native):hover::after {
+  background-color: #a3e681;
+}
+
+ion-fab-button::part(native):active::after {
+  background-color: #87d361;
+}
+
+ion-fab-button::part(native) {
+  background-color: #b7f399;
+  border-radius: 15px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  color: rgb(59, 45, 45);
+}
+
+ion-fab-button::part(native):hover::after {
+  background-color: #a3e681;
+}
+
+ion-fab-button::part(native):active::after {
+  background-color: #87d361;
+}
+/* Style even and odd rows differently for better readability */
+ion-card tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+ion-card tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* Style table data cells */
+ion-card td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style the "Edit" button column */
+ion-card td button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+ion-card td button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar class="custom-header">
+    <ion-title class="ion-text-light custom-title">Warga Greenland FH-Mobile</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="light" class="custom-logout" (click)="confirmLogout()">
+        <ion-icon name="log-out" class="icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <img src="" alt="">
+  <div class="login-section" *ngFor="let user of Data">
+
+    <ion-card-header>
+      <p class="text-center">{{user.nama}}</p>
+      <p class="text-center">{{user.kd_blok}}:{{user.nama_blok}}</p>
+      </ion-card-header>
+    
+    <div class="img-border">
+      <img
+       
+        src="{{user.foto}}"
+        alt=""
+        class="centered-image"
+      />
+    </div>
+    
+    </div>
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button>
+        <ion-icon name="chevron-up-circle"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button routerLink="/tahuan">
+          <ion-icon name="today-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button routerLink="/h-lainnya">
+          <ion-icon name="reader-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button routerLink="/iuran">
+          <ion-icon name="cash-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button routerLink="/d-iuran">
+          <ion-icon name="wallet-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+ 
+</ion-content>

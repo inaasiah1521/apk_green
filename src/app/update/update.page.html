@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon
+        name="arrow-back-circle-outline"
+        style="width: 30px"
+        [routerLink]="['/tabs/tab2']"
+      ></ion-icon>
+      <ion-title>Update Penduduk</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container d-block justify-content-center">
+    <div class="d-flex justify-content-center py-2" >
+      <img
+        src="http://localhost/rest-api/uploads/{{image}}"
+        class="rounded-circle w-75"
+      />
+    </div>
+    <ion-item>
+      <ion-label>Edit Foto</ion-label>
+      <ion-input (change)="getFile($event)" type="file"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">NIK</ion-label>
+      <ion-input [(ngModel)]="nik" type="text" readonly></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Nama</ion-label>
+      <ion-input [(ngModel)]="nama" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Tempat Lahir</ion-label>
+      <ion-input [(ngModel)]="tmpt_lhr" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Jenis Kelamin</ion-label>
+      <ion-input [(ngModel)]="jk" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Tanggal Lahir</ion-label>
+      <ion-input [(ngModel)]="tgl_lhr" type="date"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Agama</ion-label>
+      <ion-input [(ngModel)]="agama" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Status Perkawinan</ion-label>
+      <ion-input [(ngModel)]="stts_prkwn" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Status Keluarga</ion-label>
+      <ion-input [(ngModel)]="stts_klrg" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Status Kewarganegaraan</ion-label>
+      <ion-input [(ngModel)]="stts_kwngn" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Status Pekerjaan</ion-label>
+      <ion-input [(ngModel)]="stts_pkrjan" type="text"></ion-input>
+    </ion-item>
+    <div class="form-group mt-3">
+      <ion-button expand="full" (click)="Update()">Update Data</ion-button>
+    </div>
+  </div>
+</ion-content>

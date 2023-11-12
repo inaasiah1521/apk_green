@@ -1,0 +1,41 @@
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-out {
+  0%,
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.container {
+  background: #fff;
+  position: fixed;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  animation: fade-out 4s;
+}
+
+.container #logo {
+  background: #ffff;
+  border-radius: 25%;
+  --size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--size);
+  animation: scale-in 2s;
+  animation-delay: 0.5s;
+}

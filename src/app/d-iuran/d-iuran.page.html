@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon
+        name="arrow-back-circle-outline"
+        style="font-size: 30px"
+        [routerLink]="['/tabs/tab1']"
+      ></ion-icon>
+      <ion-title>Histori Pembayaran</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="--background: #f5f7f8">
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <div class="mx-1 mt-2 mb-5">
+    <div
+      class="d-flex bg-white shadow align-items-center justify-content-between rounded border border-secondary px-1 mx-2"
+    >
+      <ion-item>
+        <ion-label>Tahun Pembayaran</ion-label>
+        <ion-select [(ngModel)]="searchYear" placeholder="Tahun Pembayaran">
+          <ion-select-option
+            *ngFor="let tahun of tahunList"
+            value="{{tahun.tahun}}"
+            >{{tahun.tahun}}</ion-select-option
+          >
+        </ion-select>
+      </ion-item>
+      <ion-icon
+        name="search"
+        class="mx-1"
+        style="font-size: 20px"
+        (click)="getPayment()"
+      ></ion-icon>
+    </div>
+    <div *ngFor="let data of Data">
+      <ion-card class="my-2" style="border-radius: 15px">
+        <ion-card-header>
+          <div class="d-flex justify-content-between w-100">
+            <ion-card-title>{{data.kas_bulan}}</ion-card-title>
+            <button class="btn btn-secondary p-1 px-2 m-0">
+              {{data.status}}
+            </button>
+          </div>
+          <ion-card-subtitle
+            >{{data.jenis_pembayaran}} - 
+            {{data.kas_tahun}}</ion-card-subtitle
+          >
+          <ion-card-subtitle
+            >{{data.keterangan}}</ion-card-subtitle
+          >
+          <div class="w-100 d-flex justify-content-end mt-1 text-end">
+            <ion-card-subtitle>{{data.tgl_pembayaran}}</ion-card-subtitle>
+          </div>
+        </ion-card-header>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

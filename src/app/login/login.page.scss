@@ -1,0 +1,513 @@
+ion-content {
+  --background: #e0dfe6;
+
+  #header {
+    height: 33%;
+    background: #719dfc;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px;
+
+    #app-bar {
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+        img {
+          width: 70%;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 19px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+  }
+
+  .wrapper {
+    position: absolute;
+    top: 26%;
+    left: 4%;
+    right: 4%;
+
+    .form-wrapper,
+    .register-wrapper {
+      box-shadow: none;
+      border-radius: 20px;
+      padding: 15px 10px;
+
+      ion-item {
+        --background: #efefef;
+        --padding-start: 10px;
+        --highlight-height: 0;
+        --border-with: 0;
+        --padding-top: 0;
+        --min-height: 40px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+
+        ion-icon {
+          font-size: 18px;
+        }
+        ion-input {
+          margin-left: 10px;
+          font-size: 14px;
+        }
+      }
+      ion-button {
+        height: 48px;
+        --box-shadow: none;
+        text-transform: initial;
+        font-size: 16px;
+        letter-spacing: 0;
+        font-weight: 400;
+      }
+    }
+
+    .line-text {
+      padding: 0 30px;
+      position: relative;
+      height: 20px;
+      margin-top: 30px;
+
+      .lines {
+        height: 1px;
+        background: #858585;
+        display: block;
+      }
+      .text {
+        position: absolute;
+        margin-top: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #050505;
+        padding: 0 16px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #5e5e5e;
+      }
+    }
+  }
+
+
+ion-content {
+    img {
+      height: 130px;
+      margin-top: 30%;
+    }
+    
+  }
+  ion-content {
+    --background: url("../../assets/Universitas\ Binaniaga12.png");
+    position: center;
+    margin-left: 500px;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+
+  }
+  .custom-font {
+    font-family: "Consolas", sans-serif;
+  }
+  .title {
+    text-align: center;
+    font-family: "Nunito";
+    color:#1a1717;
+    h3 {
+      font-family: "Segoe UI";
+      font-size: 20pt;
+    }
+    h5 {
+        font-family: Segoe UI;
+      }
+    }
+    .reg {
+      text-align: center;
+      h3 {
+        font-family: "Sogoe UI";
+        font-size: 5pt;
+      }
+      h5 {
+        font-family: "Sogoe UI";
+      }
+    }
+    ion-content {
+      .wrap-input {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        margin-bottom: 26px;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: 0 10px 30px 0px rgba(0, 145, 255, 0.12);
+      }
+      ion-input {
+        display: block;
+        width: 100%;
+        background: transparent;
+        font-family: Consolas;
+        font-size: 18px;
+        line-height: 1.5;
+        border: none;
+        outline: none;
+        height: 46px;
+        padding: 0 20px 0 23px;
+      }
+      ion-toolbar {
+        --background: transparent;
+      }
+      .container-form-btn {
+        display: flex;
+        justify-content: center;
+      }
+      .form-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        min-width: 160px;
+        height: 42px;
+        background-color: #004377;
+        border-radius: 20px;
+        font-size: 18px;
+        color: #ffff;
+        text-transform: uppercase;
+        padding-top: 5px;
+        transition: all 0.4s;
+        box-shadow: 0 a0px 30px 0px rgba(57, 71, 82, 0.5);
+      }
+      .form-btn:hover {
+        background-color: #28333b;
+        box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.8);
+      }
+      .btn {
+        font-size: 18px;
+        color: #7e9eee;
+        text-transform: uppercase;
+      }
+      button {
+        --glow-color: rgb(141, 226, 223);
+        --glow-spread-color: rgba(107, 238, 236, 0.781);
+        --enhanced-glow-color: rgb(231, 206, 255);
+        --btn-color: rgb(13, 14, 13);
+        border: .25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em .25em var(--glow-color),
+               0 0 4em 1em var(--glow-spread-color),
+               inset 0 0 .75em .25em var(--glow-color);
+        text-shadow: 0 0 .5em var(--glow-color);
+        position: relative;
+        transition: all 0.3s;
+       }
+       
+       button::after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--glow-spread-color);
+        filter: blur(2em);
+        opacity: .7;
+        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+       }
+       
+       button:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em .25em var(--glow-color),
+               0 0 4em 2em var(--glow-spread-color),
+               inset 0 0 .75em .25em var(--glow-color);
+       }
+       
+
+       
+       button:active {
+        box-shadow: 0 0 0.6em .25em var(--glow-color),
+               0 0 2.5em 2em var(--glow-spread-color),
+               inset 0 0 .5em .25em var(--glow-color);
+       }
+    
+    } 
+       
+
+ion-content {
+  --background: #e0dfe6;
+
+  #header {
+    height: 33%;
+    background: #719dfc;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px;
+
+    #app-bar {
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+        img {
+          width: 70%;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 19px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+  }
+
+  .wrapper {
+    position: absolute;
+    top: 26%;
+    left: 4%;
+    right: 4%;
+
+    .form-wrapper,
+    .register-wrapper {
+      box-shadow: none;
+      border-radius: 20px;
+      padding: 15px 10px;
+
+      ion-item {
+        --background: #efefef;
+        --padding-start: 10px;
+        --highlight-height: 0;
+        --border-with: 0;
+        --padding-top: 0;
+        --min-height: 40px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+
+        ion-icon {
+          font-size: 18px;
+        }
+        ion-input {
+          margin-left: 10px;
+          font-size: 14px;
+        }
+      }
+      ion-button {
+        height: 48px;
+        --box-shadow: none;
+        text-transform: initial;
+        font-size: 16px;
+        letter-spacing: 0;
+        font-weight: 400;
+      }
+    }
+
+    .line-text {
+      padding: 0 30px;
+      position: relative;
+      height: 20px;
+      margin-top: 30px;
+
+      .lines {
+        height: 1px;
+        background: #858585;
+        display: block;
+      }
+      .text {
+        position: absolute;
+        margin-top: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #050505;
+        padding: 0 16px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #5e5e5e;
+      }
+    }
+  }
+
+
+ion-content {
+    img {
+      height: 130px;
+      margin-top: 30%;
+    }
+    
+  }
+  ion-content {
+   
+    position: center;
+    margin-left: 500px;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+
+  }
+  .custom-font {
+    font-family: "Consolas", sans-serif;
+  }
+  .title {
+    text-align: center;
+    font-family: "Nunito";
+    color:#1a1717;
+    h3 {
+      font-family: "Segoe UI";
+      font-size: 20pt;
+    }
+    h5 {
+        font-family: Segoe UI;
+      }
+    }
+    .reg {
+      text-align: center;
+      h3 {
+        font-family: "Sogoe UI";
+        font-size: 5pt;
+      }
+      h5 {
+        font-family: "Sogoe UI";
+      }
+    }
+    ion-content {
+      .wrap-input {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        margin-bottom: 26px;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: 0 10px 30px 0px rgba(0, 145, 255, 0.12);
+      }
+      ion-input {
+        display: block;
+        width: 100%;
+        background: transparent;
+        font-family: Consolas;
+        font-size: 18px;
+        line-height: 1.5;
+        border: none;
+        outline: none;
+        height: 46px;
+        padding: 0 20px 0 23px;
+      }
+      ion-toolbar {
+        --background: transparent;
+      }
+      .container-form-btn {
+        display: flex;
+        justify-content: center;
+      }
+      .form-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        min-width: 160px;
+        height: 42px;
+        background-color: #004377;
+        border-radius: 20px;
+        font-size: 18px;
+        color: #ffff;
+        text-transform: uppercase;
+        padding-top: 5px;
+        transition: all 0.4s;
+        box-shadow: 0 a0px 30px 0px rgba(57, 71, 82, 0.5);
+      }
+      .form-btn:hover {
+        background-color: #28333b;
+        box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.8);
+      }
+      .btn {
+        font-size: 18px;
+        color: #7e9eee;
+        text-transform: uppercase;
+      }
+      button {
+        --glow-color: rgb(141, 226, 223);
+        --glow-spread-color: rgba(107, 238, 236, 0.781);
+        --enhanced-glow-color: rgb(231, 206, 255);
+        --btn-color: rgb(13, 14, 13);
+        border: .25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em .25em var(--glow-color),
+               0 0 4em 1em var(--glow-spread-color),
+               inset 0 0 .75em .25em var(--glow-color);
+        text-shadow: 0 0 .5em var(--glow-color);
+        position: relative;
+        transition: all 0.3s;
+       }
+       
+       button::after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--glow-spread-color);
+        filter: blur(2em);
+        opacity: .7;
+        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+       }
+       
+       button:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em .25em var(--glow-color),
+               0 0 4em 2em var(--glow-spread-color),
+               inset 0 0 .75em .25em var(--glow-color);
+       }
+       #header {
+        background-color: rgb(82, 201, 82); /* Ganti warna latar belakang menjadi hijau */
+      }
+      
+      ion-button {
+        background-color: green !important; /* Ganti warna latar belakang tombol "Masuk" menjadi hijau */
+        color: white !important; /* Ganti warna teks tombol "Masuk" menjadi putih */
+      }
+      
+      .line-text .lines {
+        background-color: green; /* Ganti warna latar belakang garis menjadi hijau */
+      }
+      
+      .line-text .text {
+        color: green; /* Ganti warna teks pada garis menjadi hijau */
+      }
+      
+
+       
+       button:active {
+        box-shadow: 0 0 0.6em .25em var(--glow-color),
+               0 0 2.5em 2em var(--glow-spread-color),
+               inset 0 0 .5em .25em var(--glow-color);
+       }
+    
+    } 
+       
